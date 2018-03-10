@@ -1,0 +1,69 @@
+{
+  "name": "links",
+  "version": "0.0.1",
+  "description": "Links on note, articles, video ans sites about Web Development and Design",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "start": "webpack-dev-server --hot --inline --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonW1nd/Links.git"
+  },
+  "keywords": [
+    "Links"
+  ],
+  "author": "Alexander Ivankov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MoonW1nd/Links/issues"
+  },
+  "homepage": "https://github.com/MoonW1nd/Links#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "concurrently": "^3.5.1",
+    "css-loader": "^0.28.10",
+    "eslint": "^4.18.2",
+    "eslint-plugin-react": "^7.7.0",
+    "husky": "^0.14.3",
+    "jsonlint": "^1.6.3",
+    "lint-staged": "^7.0.0",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "history": "^4.7.2",
+    "immutable": "^3.8.2",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-day-picker": "^7.1.2",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "react-select": "^1.2.1",
+    "react-transition-group": "^2.2.1",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.scss": "stylelint --syntax=scss",
+    "*.json": "jsonlint"
+  }
+}
