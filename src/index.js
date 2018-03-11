@@ -1,8 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
+import App from './App';
 
-function App() {
-  return <div>{"Let's Start?"}</div>;
-}
-
-render(<App />, document.getElementById('App'));
+render(<App/>, document.getElementById('App'));
