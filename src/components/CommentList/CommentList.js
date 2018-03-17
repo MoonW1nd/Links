@@ -1,18 +1,13 @@
 import Comment from '../Comment/Comment';
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import ToggleOpenDecorator from '../../decorators/toggleOpen';
 
-export default class CommentList extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isOpen: false,
-    };
-  }
+class CommentList extends React.Component {
   render() {
-    const { isOpen } = this.state;
+    const { isOpen, toggleOpen } = this.props;
     return <div>
-      <button onClick = {this.toogleOpen}>
+      <button onClick = {toggleOpen}>
         {isOpen ? 'Close comments' : 'Open Comments'}
       </button>
       {this.getContent()}
@@ -20,22 +15,25 @@ export default class CommentList extends React.Component {
   }
 
   getContent() {
-    if (!this.state.isOpen) return null;
+    if (!this.props.isOpen) return null;
     const { comments } = this.props;
+    if (!comments.length) return <p>No comments yet</p>;
     const commentsElements = comments
       .map(comment => <li key = { comment.id }><Comment comment = { comment }/></li>);
     return <ul>
     {commentsElements}
   </ul>;
   }
-
-  toogleOpen = () => {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
-  }
 }
 
 CommentList.propTypes = {
   comments: PropTypes.array,
+  isOpen: PropTypes.bool,
+  toggleOpen: PropTypes.func,
 };
+
+CommentList.defaultProps = {
+  comments: [],
+};
+
+export default ToggleOpenDecorator(CommentList);
