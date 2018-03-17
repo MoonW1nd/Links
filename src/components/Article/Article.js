@@ -1,31 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import CommentList from '../CommentList/CommentList';
 import ToggleOpenDecorator from '../../decorators/toggleOpen';
 
-class Article extends Component {
-  render() {
-    const { article, isOpen, toggleOpen } = this.props;
-    return (
-      <div>
-        <h3>{article.title}</h3>
-        <button onClick = {toggleOpen}>
-          {isOpen ? 'Close' : 'Open'}
-        </button>
-        {this.getContent()}
-      </div>
-    );
-  }
-
-  getContent() {
-    if (!this.props.isOpen) return null;
-    const { article } = this.props;
-    return <section>
-      {article.text}
-      <CommentList comments = { article.comments }/>
-    </section>;
-  }
+function Article({ article, isOpen, toggleOpen }) {
+  return (
+    <div>
+      <h3>{article.title}</h3>
+      <button onClick = { toggleOpen }>
+        { isOpen ? 'Close' : 'Open' }
+      </button>
+      { getContent(article, isOpen) }
+    </div>
+  );
 }
+
+function getContent(article, isOpen) {
+  if (!isOpen) return null;
+  return <section>
+    {article.text}
+    <CommentList comments = { article.comments }/>
+  </section>;
+}
+
 
 Article.propTypes = {
   article: PropTypes.shape({
