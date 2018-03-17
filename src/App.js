@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import Article from './components/Article/Article';
+import ArticleList from './components/ArticleList/ArticleList';
 import { articles } from './data';
 
 export default function App() {
   return <div>
     <Header/>
-    <Article article={articles[0]}/>
+    <ArticleList articles={ articles }/>
   </div>;
 }

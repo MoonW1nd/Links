@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint-staged",
-    "start": "webpack-dev-server --hot --inline --mode development",
+    "start": "webpack-dev-server --hot --inline --host 0.0.0.0 --mode development",
     "build": "webpack --mode production"
   },
   "repository": {
