@@ -1,7 +1,7 @@
 import Comment from '../Comment/Comment';
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import ToggleOpenDecorator from '../../decorators/toggleOpen';
+import ToggleOpenDecorator from '../../decorators/ToggleOpen';
 
 function CommentList({ isOpen, toggleOpen, comments }) {
   return <div>
@@ -26,7 +26,7 @@ function getContent(comments, isOpen) {
 CommentList.propTypes = {
   comments: PropTypes.array,
   isOpen: PropTypes.bool,
-  toggleOpen: PropTypes.func,
+  toggleOpen: PropTypes.func.isRequired,
 };
 
 CommentList.defaultProps = {
