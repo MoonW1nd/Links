@@ -24,5 +24,5 @@ ArticleList.propTypes = {
   articles: PropTypes.array.isRequired,
   // from accordeon
   openComponentId: PropTypes.string,
-  toggleOpenComponent: PropTypes.func.idRequired,
+  toggleOpenComponent: PropTypes.func,
 };

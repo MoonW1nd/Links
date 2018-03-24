@@ -3,14 +3,9 @@ import PropTypes from 'prop-types';
 import CommentList from '../CommentList/CommentList';
 
 
-export default class Article extends React.Component {
-  shouldComponentUpdate(nextProps) {
-    return nextProps.isOpen !== this.props.isOpen;
-  }
-
+export default class Article extends React.PureComponent {
   render() {
     const { article, isOpen, toggleOpen } = this.props;
-    console.log('update article');
     return (
       <div>
         <h3>{ article.title }</h3>
@@ -36,7 +31,7 @@ export default class Article extends React.Component {
 
 
 Article.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   article: PropTypes.shape({
     title: PropTypes.string.isRequired,
     text: PropTypes.string,
