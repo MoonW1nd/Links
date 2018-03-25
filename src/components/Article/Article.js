@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CommentList from '../CommentList/CommentList';
+import { TransitionGroup } from 'react-transition-group';
 
 
 export default class Article extends React.PureComponent {
@@ -12,7 +13,13 @@ export default class Article extends React.PureComponent {
         <button onClick = { toggleOpen }>
           { isOpen ? 'Close' : 'Open' }
         </button>
-        { this.getContent() }
+        <TransitionGroup
+          className = 'article'
+          timeout = { 500 }
+          in = { this.props }
+        >
+          { this.getContent() }
+        </TransitionGroup>
       </div>
     );
   }
@@ -23,7 +30,7 @@ export default class Article extends React.PureComponent {
     const content = this.props.article.text;
     if (!isOpen) return null;
     return <section>
-      {content}
+      { content }
       <CommentList comments = { comments }/>
     </section>;
   }
