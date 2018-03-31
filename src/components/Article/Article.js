@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CommentList from '../CommentList/CommentList';
-import { TransitionGroup } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
+import './Article.scss';
 
 
 export default class Article extends React.PureComponent {
@@ -13,13 +14,7 @@ export default class Article extends React.PureComponent {
         <button onClick = { toggleOpen }>
           { isOpen ? 'Close' : 'Open' }
         </button>
-        <TransitionGroup
-          className = 'article'
-          timeout = { 500 }
-          in = { this.props }
-        >
-          { this.getContent() }
-        </TransitionGroup>
+        {this.getContent()}
       </div>
     );
   }
@@ -28,11 +23,14 @@ export default class Article extends React.PureComponent {
     const { isOpen } = this.props;
     const { comments } = this.props.article;
     const content = this.props.article.text;
-    if (!isOpen) return null;
-    return <section>
-      { content }
-      <CommentList comments = { comments }/>
-    </section>;
+    return <CSSTransition timeout={ { enter: 300, exit: 0 } } classNames='article' in={isOpen} unmountOnExit>
+      {
+       <section className={'article'}>
+            {content}
+            <CommentList comments = { comments }/>
+          </section>
+      }
+    </CSSTransition>;
   }
 }
 
