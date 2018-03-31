@@ -31,7 +31,7 @@
     "function-comma-space-before": "never",
     "function-url-quotes": "always",
     "max-empty-lines": 5,
-    "number-leading-zero": "never",
+    "number-leading-zero": "always",
     "comment-empty-line-before": "always",
     "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
