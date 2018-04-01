@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CommentList from '../CommentList/CommentList';
+import CommentList from '../CommentList/CommentList.jsx';
 import { CSSTransition } from 'react-transition-group';
 import './Article.scss';
 

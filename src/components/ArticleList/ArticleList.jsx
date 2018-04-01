@@ -1,7 +1,7 @@
 import React from 'react';
-import Article from '../Article/Article';
+import Article from '../Article/Article.jsx';
 import { PropTypes } from 'prop-types';
-import AccordeonDecorator from '../../decorators/Accordeon';
+import AccordeonDecorator from '../../decorators/Accordeon.jsx';
 
 function ArticleList(props) {
   const { articles } = props;

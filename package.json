@@ -67,6 +67,10 @@
       "eslint --fix",
       "git add"
     ],
+    "*.jsx": [
+      "eslint --fix",
+      "git add"
+    ],
     "*.scss": "stylelint --syntax=scss",
     "*.json": "jsonlint"
   }
