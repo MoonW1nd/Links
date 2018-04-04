@@ -2,6 +2,7 @@ import React from 'react';
 import Article from '../Article/Article.jsx';
 import { PropTypes } from 'prop-types';
 import AccordeonDecorator from '../../decorators/Accordeon.jsx';
+import './ArticleList.scss';
 
 function ArticleList(props) {
   const { articles } = props;
@@ -13,7 +14,7 @@ function ArticleList(props) {
         toggleOpen = { props.toggleOpenComponent(article.id) }
       />
     </li>);
-  return <ul>
+  return <ul className='ArticleList'>
     { articleElements }
   </ul>;
 }
