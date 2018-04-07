@@ -9,8 +9,8 @@ export default class Article extends React.PureComponent {
   render() {
     const { article, isOpen, toggleOpen } = this.props;
     return (
-      <div>
-        <h3>{ article.title }</h3>
+      <div className='Article'>
+        <h3 className='Article-Title'>{ article.title }</h3>
         <button onClick = { toggleOpen }>
           { isOpen ? 'Close' : 'Open' }
         </button>

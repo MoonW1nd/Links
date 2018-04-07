@@ -7,7 +7,7 @@ import './ArticleList.scss';
 function ArticleList(props) {
   const { articles } = props;
   const articleElements = articles
-    .map(article => <li key = { article.id }>
+    .map(article => <li key = { article.id } className='ArticleList-Article_Wrapper'>
       <Article
         article = { article }
         isOpen = { article.id === props.openComponentId }
