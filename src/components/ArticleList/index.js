@@ -2,6 +2,7 @@ import React from 'react';
 import Article from '../Article';
 import { PropTypes } from 'prop-types';
 import AccordeonDecorator from '../../decorators/Accordeon';
+import { connect } from 'react-redux';
 import './style.scss';
 
 function ArticleList(props) {
@@ -19,7 +20,9 @@ function ArticleList(props) {
   </ul>;
 }
 
-export default AccordeonDecorator(ArticleList);
+export default connect(state => ({
+  articles: state.articles,
+}))(AccordeonDecorator(ArticleList));
 
 ArticleList.propTypes = {
   articles: PropTypes.array.isRequired,

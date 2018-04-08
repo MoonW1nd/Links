@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
 import ArticleList from './components/ArticleList';
-import { articles } from './data';
 import SearchInput from './components/SearchInput';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -12,7 +11,7 @@ export default function App() {
     <div className='App'>
       <Header/>
       <SearchInput/>
-      <ArticleList articles={ articles }/>
+      <ArticleList/>
     </div>
   </Provider>;
 }
