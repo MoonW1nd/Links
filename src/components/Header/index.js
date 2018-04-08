@@ -1,7 +1,7 @@
 import React from 'react';
-import Logo from '../Logo/Logo.jsx';
-import './Header.scss';
-import HeaderButton from '../Header-Button/Header-Button.jsx';
+import Logo from '../Logo';
+import './style.scss';
+import HeaderButton from '../Header-Button';
 
 export default function Header() {
   return <header className='Header'>

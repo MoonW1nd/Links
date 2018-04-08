@@ -1,7 +1,7 @@
-import Comment from '../Comment/Comment.jsx';
+import Comment from '../Comment';
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import ToggleOpenDecorator from '../../decorators/ToggleOpen.jsx';
+import ToggleOpenDecorator from '../../decorators/ToggleOpen';
 
 function CommentList({ isOpen, toggleOpen, comments }) {
   return <div>

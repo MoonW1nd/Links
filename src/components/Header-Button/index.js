@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import './Header-Button.scss';
+import './style.scss';
 
 export default function HeaderButton(props) {
   return <a
