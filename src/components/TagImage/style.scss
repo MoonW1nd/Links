@@ -1,0 +1,9 @@
+.TagImage {
+  &_size {
+    &_small {
+      $size-small: 20px;
+      width: $size-small;
+      height: $size-small;
+    }
+  }
+}
