@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import CommentList from '../CommentList';
 import { CSSTransition } from 'react-transition-group';
 import './style.scss';
+import TagList from '../TagList/index';
 
 
 export default class Article extends React.PureComponent {
@@ -11,6 +12,7 @@ export default class Article extends React.PureComponent {
     return (
       <div className='Article'>
         <h3 className='Article-Title'>{ article.title }</h3>
+        <TagList tags = {article.tags}/>
         <button onClick = { toggleOpen }>
           { isOpen ? 'Close' : 'Open' }
         </button>
@@ -41,6 +43,7 @@ Article.propTypes = {
     title: PropTypes.string.isRequired,
     text: PropTypes.string,
     comments: PropTypes.array,
+    tags: PropTypes.array,
   }),
   isOpen: PropTypes.bool,
   toggleOpen: PropTypes.func,
