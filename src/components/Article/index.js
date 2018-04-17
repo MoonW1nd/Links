@@ -12,11 +12,11 @@ export default class Article extends React.PureComponent {
     return (
       <div className='Article'>
         <h3 className='Article-Title'>{ article.title }</h3>
-        <TagList tags = {article.tags}/>
         <button onClick = { toggleOpen }>
           { isOpen ? 'Close' : 'Open' }
         </button>
         {this.getContent()}
+        <TagList tags = {article.tags}/>
       </div>
     );
   }
