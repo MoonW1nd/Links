@@ -4,6 +4,7 @@ import CommentList from '../CommentList';
 import { CSSTransition } from 'react-transition-group';
 import './style.scss';
 import TagList from '../TagList/index';
+import PublishDate from '../Date/index';
 
 
 export default class Article extends React.PureComponent {
@@ -12,6 +13,7 @@ export default class Article extends React.PureComponent {
     return (
       <div className='Article'>
         <h3 className='Article-Title'>{ article.title }</h3>
+        <PublishDate date = { article.date }/>
         <button onClick = { toggleOpen }>
           { isOpen ? 'Close' : 'Open' }
         </button>
