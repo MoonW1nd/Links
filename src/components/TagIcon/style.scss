@@ -1,9 +1,10 @@
+@import '../../UI-Kit/sizes';
+
 .TagIcon {
   &_size {
     &_small {
-      $size-small: 20px;
-      width: $size-small;
-      height: $size-small;
+      width: $TagIcon_size_small;
+      height: $TagIcon_size_small;
     }
   }
 }

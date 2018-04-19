@@ -1,3 +1,5 @@
+@import '../../UI-Kit/colors';
+
 .Link {
   &_size {
     &_s {
@@ -7,7 +9,7 @@
 
   &_type {
     &_article {
-      color: #838c91;
+      color: $lightGray;
     }
   }
 }

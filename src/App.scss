@@ -1,9 +1,11 @@
+@import './UI-Kit/fonts';
+
 body {
   margin: 0;
 }
 
 #App {
-  font-family: 'Roboto', sans-serif;
+  font-family: $mainFontFamily;
   .App {
     display: flex;
     flex-direction: column;
