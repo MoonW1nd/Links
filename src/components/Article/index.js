@@ -4,7 +4,8 @@ import CommentList from '../CommentList';
 import { CSSTransition } from 'react-transition-group';
 import './style.scss';
 import TagList from '../TagList/index';
-import PublishDate from '../Date/index';
+import PublishDate from '../PublishDate/index';
+import Link from '../Link/index';
 
 
 export default class Article extends React.PureComponent {
@@ -14,6 +15,7 @@ export default class Article extends React.PureComponent {
       <div className='Article'>
         <h3 className='Article-Title'>{ article.title }</h3>
         <PublishDate date = { article.date }/>
+        <Link link = { article.link } size='s' type='article'/>
         <button onClick = { toggleOpen }>
           { isOpen ? 'Close' : 'Open' }
         </button>
