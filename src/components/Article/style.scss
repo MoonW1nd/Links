@@ -1,3 +1,5 @@
+@import '../../UI-Kit/sizes';
+
 .article-enter {
   opacity: 0.01;
 }
@@ -26,7 +28,7 @@
 
   &-Title {
     font-weight: bold;
-    font-size: 26px;
+    font-size: $title_fontSize_medium;
     line-height: 30px;
     text-align: left;
     margin: 0;

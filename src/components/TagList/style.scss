@@ -1,9 +1,11 @@
+@import '../../UI-Kit/sizes';
+
 .TagList {
   position: absolute;
   display: flex;
   list-style-type: none;
-  bottom: 10px;
-  right: 10px;
+  bottom: $Card_padding;
+  right: $Card_padding;
   height: 20px;
 
   &-Element {

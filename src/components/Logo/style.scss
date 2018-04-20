@@ -1,6 +1,8 @@
+@import '../../UI-Kit/sizes';
+
 .Logo {
   font-weight: lighter;
-  font-size: 24px;
+  font-size: $title_fontSize_medium;
   line-height: 40px;
   letter-spacing: 5px;
 }

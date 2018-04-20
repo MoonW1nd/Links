@@ -1,13 +1,15 @@
+@import '../../UI-Kit/sizes';
+@import '../../UI-Kit/colors';
+
 .HeaderButton {
-  color: #000000;
+  color: $black;
   margin: 0 5px;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: $fontSize_medium;
   text-decoration: none;
   &:visited {
-    color: #000000;
+    color: $black;
   }
   &:hover {
-    color: #808080;
+    color: $lightGray;
   }
 }

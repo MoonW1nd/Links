@@ -1,9 +1,11 @@
 @import '../../UI-Kit/colors';
+@import '../../UI-Kit/sizes';
 
 .Link {
   &_size {
     &_s {
-      font-size: 10px;
+      font-size: $fontSize_small;
+      font-weight: $fontWeight_light;
     }
   }
 
