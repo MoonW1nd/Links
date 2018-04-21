@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CommentList from '../CommentList';
+// import CommentList from '../CommentList';
 import { CSSTransition } from 'react-transition-group';
 import './style.scss';
 import TagList from '../TagList/index';
@@ -16,10 +16,13 @@ export default class Article extends React.PureComponent {
         <h3 className='Article-Title'>{ article.title }</h3>
         <PublishDate date = { article.date }/>
         <Link link = { article.link } size='s' type='article'/>
-        <button onClick = { toggleOpen }>
-          { isOpen ? 'Close' : 'Open' }
-        </button>
         {this.getContent()}
+        <button
+          onClick = { toggleOpen }
+          className = { `Article-Button ${isOpen ? 'Article-Button_open' : ''}`}
+        >
+          { isOpen ? 'Свернуть' : 'Подробнее' }
+        </button>
         <TagList tags = {article.tags}/>
       </div>
     );
@@ -27,13 +30,13 @@ export default class Article extends React.PureComponent {
 
   getContent = () => {
     const { isOpen } = this.props;
-    const { comments } = this.props.article;
+    // const { comments } = this.props.article;
     const content = this.props.article.text;
     return <CSSTransition timeout={ { enter: 300, exit: 0 } } classNames='article' in={isOpen} unmountOnExit>
       {
-       <section className={'article'}>
+       <section className={'Article-Content'}>
             {content}
-            <CommentList comments = { comments }/>
+            {/* <CommentList comments = { comments }/> */}
           </section>
       }
     </CSSTransition>;

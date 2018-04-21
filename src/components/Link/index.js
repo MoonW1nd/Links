@@ -8,7 +8,7 @@ export default function Link({
   const typeClassName = type ? `Link_type_${type}` : '';
   const sizeClassName = size ? `Link_size_${size}` : 'Link_size_medium';
   return <a
-    href = {link === 'Упс что-то пошло не так :(' ? '/' : 'link'}
+    href = {link === 'Упс что-то пошло не так :(' ? '/' : link }
     className = {`Link ${typeClassName} ${sizeClassName}`}
   >
     {text || `${link}`}
