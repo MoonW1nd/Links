@@ -1,0 +1,24 @@
+@import '../../UI-Kit/sizes';
+@import '../../UI-Kit/colors';
+
+.SearchInput {
+  z-index: 2;
+  position: absolute;
+  left: 50px;
+}
+
+.Input {
+  &_type {
+    &_search {
+      font-size: $fontSize_medium;
+      border-top-width: 0;
+      border-right-width: 0;
+      border-Left-width: 0;
+
+      &:focus {
+        border-bottom-color: $yellow;
+        outline: none;
+      }
+    }
+  }
+}
