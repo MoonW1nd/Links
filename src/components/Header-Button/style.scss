@@ -2,14 +2,15 @@
 @import '../../UI-Kit/colors';
 
 .HeaderButton {
-  color: $black;
+  color: $gray;
   margin: 0 5px;
   font-size: $fontSize_medium;
   text-decoration: none;
   &:visited {
-    color: $black;
+    // color: $black;
+    color: $gray;
   }
   &:hover {
-    color: $gray;
+    color: darken($gray, 10%);
   }
 }
