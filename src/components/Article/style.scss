@@ -27,6 +27,7 @@
   border-radius: 5px;
   box-sizing: border-box;
   padding: $Card_padding;
+  padding-right: 75px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -48,12 +49,16 @@
 
   &-Content {
    padding: 10px 20px;
+   margin-right: -65px;
   }
 
   &-Button {
     margin-top: 10px;
     color: $gray;
+    border-style: solid;
     border-color: $lightGray;
+    border-width: 1px;
+    background-color: $lightGray;
     font-size: $fontSize_small;
 
     &:hover {
