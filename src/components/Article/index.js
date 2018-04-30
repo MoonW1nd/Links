@@ -21,7 +21,7 @@ export default class Article extends React.PureComponent {
           onClick = { toggleOpen }
           className = { `Article-Button ${isOpen ? 'Article-Button_open' : ''}`}
         >
-          { isOpen ? 'Свернуть' : 'Подробнее' }
+          { isOpen ? '' : 'Подробнее...' }
         </button>
         <TagList tags = {article.tags}/>
       </div>
