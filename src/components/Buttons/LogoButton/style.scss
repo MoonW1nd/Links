@@ -3,7 +3,7 @@
 
 @mixin setLogoSize($size, $class) {
   &_#{$class},
-  &_#{$class} img {
+  &_#{$class} svg {
     width: $size;
     height: $size;
   }
@@ -13,11 +13,16 @@
   // batton style reset
   padding: 0;
   border: none;
-  margin: 0 5px;
+  margin-left: 10px;
 }
+
 .LogoButton {
-  &:hover {
-    color: darken($gray, 10%);
+  .icon {
+    fill: darken($lightGray, 10%);
+  }
+
+  &:hover .icon {
+    fill: darken($cyanLight, 10%);
   }
 
   &_size {

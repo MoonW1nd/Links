@@ -4,15 +4,13 @@ import iconLibrary from './assets/_iconLibraryModule';
 import './style.scss';
 
 export default function LogoButton(props) {
-  const img = iconLibrary[props.logoName] ? iconLibrary[props.logoName] : '';
+  const svg = iconLibrary[props.logoName] ? iconLibrary[props.logoName] : '';
   const buttonSize = props.size ? props.size : 'medium';
   return <a
     className = {`Button LogoButton LogoButton_size_${buttonSize}`}
     href = {props.link}
+    dangerouslySetInnerHTML = {{ __html: svg }}
   >
-    <img
-      src = {img}
-    />
   </a>;
 }
 

@@ -1,5 +1,5 @@
-import gitHub from './octoCat.svg';
-import AlexanderIvankovLogo from './AlexanderIvankovLogo.svg';
+import gitHub from './octoCat.js';
+import AlexanderIvankovLogo from './AlexanderIvankovLogo.js';
 
 export default {
   gitHub,
