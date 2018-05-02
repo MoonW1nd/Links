@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/MoonW1nd/Links#readme",
   "devDependencies": {
+    "autoprefixer": "^8.4.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^7.1.4",
@@ -39,6 +40,7 @@
     "jsonlint": "^1.6.3",
     "lint-staged": "^7.0.0",
     "node-sass": "^4.8.3",
+    "postcss-loader": "^2.1.4",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "stylelint": "^9.1.3",
