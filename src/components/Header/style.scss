@@ -2,9 +2,9 @@
 
 .Header {
   width: 100vw;
-  min-height: 80px;
+  min-height: 60px;
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
   justify-content: center;
   align-items: center;
@@ -20,6 +20,5 @@
     width: 100vw;
     padding: 0 50px;
     box-sizing: border-box;
-    margin-top: 3px;
   }
 }
