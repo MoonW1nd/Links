@@ -1,0 +1,13 @@
+@media (max-width: 820px) {
+  .Header {
+    &-ButtonsWrapper {
+      padding: 0 5vw;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .LogoButton_name_AlexanderIvankovLogo {
+    display: none;
+  }
+}

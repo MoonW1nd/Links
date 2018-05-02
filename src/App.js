@@ -4,6 +4,7 @@ import ArticleList from './components/ArticleList';
 import { Provider } from 'react-redux';
 import store from './store';
 import './App.scss';
+import './mediaQueries.scss';
 
 export default function App() {
   return <Provider store = { store }>

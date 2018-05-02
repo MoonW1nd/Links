@@ -1,6 +1,9 @@
+@import '../../UI-Kit/sizes';
+
 .ArticleList {
-  width: 80vw;
+  width: 90vw;
   max-width: 1280px;
+  min-width: calc(#{$App_minWidth} - 10vw);
   list-style-type: none;
   padding: 0;
   margin: 0;

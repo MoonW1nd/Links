@@ -1,7 +1,9 @@
 @import '../../UI-Kit/colors';
+@import '../../UI-Kit/sizes';
 
 .Header {
   width: 100vw;
+  min-width: $App_minWidth;
   min-height: 60px;
   display: flex;
   position: fixed;
@@ -18,6 +20,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100vw;
+    min-width: $App_minWidth;
     padding: 0 50px;
     box-sizing: border-box;
   }

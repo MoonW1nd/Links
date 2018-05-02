@@ -1,9 +1,11 @@
 @import './UI-Kit/fonts';
 @import './UI-Kit/colors';
+@import './UI-Kit/sizes';
 
 body {
   margin: 0;
   background-color: #f6f6f6;
+  min-width: $App_minWidth; // size Galszy s5
 }
 
 #App {
