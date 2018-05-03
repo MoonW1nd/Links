@@ -3,6 +3,7 @@ import javaScript from './javaScript.svg';
 import gulp from './gulp.svg';
 import npm from './npm.svg';
 import gitHub from './octoCat.svg';
+import css from './css.svg';
 
 export default {
   nodeJS,
@@ -10,4 +11,5 @@ export default {
   gulp,
   npm,
   gitHub,
+  css,
 };
