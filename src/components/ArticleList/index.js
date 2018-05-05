@@ -5,8 +5,10 @@ import AccordeonDecorator from '../../decorators/Accordeon';
 import { connect } from 'react-redux';
 import './style.scss';
 
+
 function ArticleList(props) {
   const { articles } = props;
+  articles.sort((a, b) => b.id - a.id);
   const articleElements = articles
     .map(article => <li key = { article.id } className='ArticleList-Article_Wrapper'>
       <Article

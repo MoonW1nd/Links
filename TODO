@@ -4,6 +4,8 @@ Todo:
     ☐ add set size TagList in props
     ☐ create UI-Kit for consistency sizes, colors and other values (Design Sistem)
     ✔ add AutoPrefixer @done(18-05-02 21:38)
+    ☐ add sort articles by date or by time adding
+    ☐ add GitHub pages
     ☐ ! Upgrade outline on fucused element
     ☐ Add all size for svg in LogoButton component
     ☐ Add Languige mark on Article Card
@@ -11,3 +13,8 @@ Todo:
 
   Feature:
     ☐ Add video player from Youtube
+
+  Documentation:
+    ☐ Add README
+    ☐ Add CHANGELOG
+    ☐ Add description for PR and add new content
