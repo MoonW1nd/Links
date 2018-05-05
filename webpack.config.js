@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/static/',
+    publicPath: 'build/',
   },
   module: {
     rules: [
@@ -37,7 +37,9 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: {},
+            options: {
+              outputPath: 'images/',
+            },
           },
         ],
       },
