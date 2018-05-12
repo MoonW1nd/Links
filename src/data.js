@@ -63,4 +63,12 @@ export const articles = [
     text: 'Обзор нового The CSS Paint API, доступного в Chrome 65',
     tags: ['javaScript', 'css'],
   },
+  {
+    id: '9',
+    date: '2018-03-13T15:03:23.000Z',
+    title: 'Designing Button States',
+    link: 'https://cloudfour.com/thinks/designing-button-states/',
+    text: 'Дизайн состояний кнопки. Тайлер Стика с введением в основные принципы создания удобных, доступных и понятных кнопок',
+    tags: ['UIUX', 'design'],
+  },
 ];
