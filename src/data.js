@@ -71,4 +71,12 @@ export const articles = [
     text: 'Дизайн состояний кнопки. Тайлер Стика с введением в основные принципы создания удобных, доступных и понятных кнопок',
     tags: ['UIUX', 'design'],
   },
+  {
+    id: '10',
+    date: '2018-02-20T15:03:23.000Z',
+    title: '7 Practical Tips for Cheating at Design',
+    link: 'https://medium.com/refactoring-ui/7-practical-tips-for-cheating-at-design-40c736799886',
+    text: '7 практических советов о том, как улучшить ваш проект, даже если у вас нет опыта в разработке дизайна. На мой взгляд очень интересно и полезно для тех кто интересуется дизайном.',
+    tags: ['design'],
+  },
 ];
