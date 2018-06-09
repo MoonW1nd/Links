@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import './style.scss';
 
 export default function YouTubeFrame({ tags, link }) {
   if (tags.indexOf('youTube') !== -1 && link) {
@@ -8,10 +9,9 @@ export default function YouTubeFrame({ tags, link }) {
       null;
 
     if (cutLink) {
-      return <div>
+      return <div className='YouTubeFrame'>
         <iframe
-          width="560"
-          height="315"
+          className='YouTubeFrame-IFrame'
           src={`https://www.youtube.com/embed/${cutLink}`}
           frameBorder="0"
           allow="autoplay; encrypted-media"

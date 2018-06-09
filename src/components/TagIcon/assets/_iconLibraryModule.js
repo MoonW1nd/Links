@@ -7,6 +7,7 @@ import css from './css.svg';
 import html from './html.svg';
 import UIUX from './UIUX.svg';
 import design from './design.svg';
+import youTube from './youTube.svg';
 
 export default {
   nodeJS,
@@ -18,4 +19,5 @@ export default {
   html,
   UIUX,
   design,
+  youTube,
 };
