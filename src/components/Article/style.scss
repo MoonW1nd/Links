@@ -21,6 +21,7 @@
 
 .Article {
   min-height: 100px;
+  max-width: calc(80ch + 70px);
   width: 100%;
   box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
   background-color: $white;
@@ -58,6 +59,10 @@
    font-style: normal;
   //  line-height: 1.58;
    line-height: 1.4;
+   &_Text {
+     max-width: 80ch;
+     margin: 0;
+   }
   }
 
   &-Button {

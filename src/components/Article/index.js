@@ -40,7 +40,9 @@ export default class Article extends React.PureComponent {
       {
         <section className={'Article-Content'}>
           <YouTubeFrame {...this.props.article}/>
-          {content}
+          <p className={'Article-Content_Text'}>
+            {content}
+          </p>
           {/* <CommentList comments = { comments }/> */}
         </section>
       }
