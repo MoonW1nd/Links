@@ -87,4 +87,28 @@ export const articles = [
     text: 'Почему эмоджи выглядят по-разному в разных браузерах? Что делать, если дизайнеры говорят, что все смайлики должны выглядеть, как на Айфоне? Решаем проблему, попутно разбираясь в спецификациях Emoji и Unicode.',
     tags: ['design', 'youTube'],
   },
+  {
+    id: '12',
+    date: '2016-08-25T15:03:23.000Z',
+    title: 'Введение в каррирование в JavaScript',
+    link: 'http://prgssr.ru/development/vvedenie-v-karrirovanie-v-javascript.html',
+    text: 'Каррирование или частичное применение это одна из техник функционального программирования, которая может показаться странной людям, знакомым с более традиционными способами написания JavaScript. Но при правильном применении каррирование действительно способно сделать ваш JavaScript более читаемым.',
+    tags: ['javaScript'],
+  },
+  {
+    id: '13',
+    date: '2018-05-12T15:03:23.000Z',
+    title: 'JavaScript Symbols, Iterators, Generators, Async/Await, and Async Iterators — All Explained Simply',
+    link: 'https://medium.freecodecamp.org/some-of-javascripts-most-useful-features-can-be-tricky-let-me-explain-them-4003d7bbed32?gi=3d4c3b0091e6',
+    text: 'Хорошее объяснение применения Символов, Итераторов, Генераторов, Async\/Awayt и асинхронных итераторов.',
+    tags: ['javaScript'],
+  },
+  {
+    id: '14',
+    date: '2018-05-12T15:03:23.000Z',
+    title: 'Асинхронность в JavaScript. Таймеры, промисы, async\/await',
+    link: 'https://youtu.be/Ih6Q7ka2eSQ',
+    text: 'Один из лучших вебинаров по объяснению асинхронности в JavaScript. ',
+    tags: ['javaScript', 'youTube'],
+  },
 ];

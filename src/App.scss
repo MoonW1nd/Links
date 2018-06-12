@@ -6,6 +6,14 @@ body {
   margin: 0;
   background-color: #f6f6f6;
   min-width: $App_minWidth; // size Galszy s5
+
+  ::selection {
+    background: $cyanLight;
+  }
+
+  ::-moz-selection {
+    background: $cyanLight;
+  }
 }
 
 #App {

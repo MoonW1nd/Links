@@ -29,8 +29,6 @@
   border-radius: 5px;
   box-sizing: border-box;
   padding: $Card_padding;
-  padding-right: 75px;
-  padding-left: 15px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -53,11 +51,13 @@
   }
 
   &-Content {
-   padding: 15px 25px;
-   margin-right: -65px;
+   padding: 15px 0;
+   width: 100%;
+   max-width: 70ch;
    letter-spacing: 0.01rem;
    font-weight: 400;
    font-style: normal;
+   align-self: center;
   //  line-height: 1.58;
    line-height: 1.4;
 
