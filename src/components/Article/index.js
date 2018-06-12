@@ -6,6 +6,7 @@ import './style.scss';
 import TagList from '../TagList/index';
 import PublishDate from '../PublishDate/index';
 import Link from '../Link/index';
+import YouTubeFrame from '../YouTubeFrame';
 
 
 export default class Article extends React.PureComponent {
@@ -32,12 +33,18 @@ export default class Article extends React.PureComponent {
     const { isOpen } = this.props;
     // const { comments } = this.props.article;
     const content = this.props.article.text;
+    // if (this.props.article.tags.indexOf('youTube') !== -1) {
+    //   content += '<iframe width="560" height="315" src="https://www.youtube.com/embed/DUwZpLBSuiI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+    // }
     return <CSSTransition timeout={ { enter: 300, exit: 0 } } classNames='article' in={isOpen} unmountOnExit>
       {
-       <section className={'Article-Content'}>
+        <section className={'Article-Content'}>
+          <YouTubeFrame {...this.props.article}/>
+          <p className={'Article-Content_Text'}>
             {content}
-            {/* <CommentList comments = { comments }/> */}
-          </section>
+          </p>
+          {/* <CommentList comments = { comments }/> */}
+        </section>
       }
     </CSSTransition>;
   }

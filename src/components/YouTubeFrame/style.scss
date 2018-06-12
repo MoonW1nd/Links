@@ -1,0 +1,16 @@
+.YouTubeFrame {
+  position: relative;
+  min-width: 300px;
+  padding-bottom: 56.25%;
+  height: 0;
+
+  &-IFrame {
+    position: absolute;
+    width: 100%;
+    max-width: 70ch;
+    max-height: calc(1080 / 1920 * 70ch);
+    height: 100%;
+    min-width: 265px;
+    min-height: 170px;
+  }
+}
