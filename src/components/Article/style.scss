@@ -21,7 +21,8 @@
 
 .Article {
   min-height: 100px;
-  max-width: calc(80ch + 70px);
+  max-width: calc(70ch + 70px);
+  min-width: 370px;
   width: 100%;
   box-shadow: 0 6px 15px rgba(36, 37, 38, 0.08);
   background-color: $white;
@@ -59,8 +60,10 @@
    font-style: normal;
   //  line-height: 1.58;
    line-height: 1.4;
+
    &_Text {
-     max-width: 80ch;
+     padding-top: 10px;
+     max-width: 70ch;
      margin: 0;
    }
   }
