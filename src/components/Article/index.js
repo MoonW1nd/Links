@@ -6,6 +6,8 @@ import TagList from '../TagList/index';
 import PublishDate from '../PublishDate/index';
 import YouTubeFrame from '../YouTubeFrame';
 import ArticleInfo from '../ArticleInfo';
+import { markdown } from 'markdown';
+import DOMPurify from 'dompurify';
 
 
 export default class Article extends React.PureComponent {
@@ -30,19 +32,12 @@ export default class Article extends React.PureComponent {
 
   getContent = () => {
     const { isOpen } = this.props;
-    // const { comments } = this.props.article;
-    const content = this.props.article.text;
-    // if (this.props.article.tags.indexOf('youTube') !== -1) {
-    //   content += '<iframe width="560" height="315" src="https://www.youtube.com/embed/DUwZpLBSuiI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-    // }
+    const content = markdown.toHTML(this.props.article.text);
     return <CSSTransition timeout={ { enter: 300, exit: 0 } } classNames='article' in={isOpen} unmountOnExit>
       {
         <div className={'Article-Content'}>
           <YouTubeFrame {...this.props.article}/>
-          <p className={'Article-Content_Text'}>
-            {content}
-          </p>
-          {/* <CommentList comments = { comments }/> */}
+          <div className={'Article-Content_Text'} dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(content) }}/>
         </div>
       }
     </CSSTransition>;
