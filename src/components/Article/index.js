@@ -1,22 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import CommentList from '../CommentList';
 import { CSSTransition } from 'react-transition-group';
 import './style.scss';
 import TagList from '../TagList/index';
 import PublishDate from '../PublishDate/index';
-import Link from '../Link/index';
 import YouTubeFrame from '../YouTubeFrame';
+import ArticleInfo from '../ArticleInfo';
 
 
 export default class Article extends React.PureComponent {
   render() {
     const { article, isOpen, toggleOpen } = this.props;
     return (
-      <div className='Article'>
+      <section className='Article'>
         <h3 className='Article-Title'>{ article.title }</h3>
         <PublishDate date = { article.date }/>
-        <Link link = { article.link } size='s' type='article'/>
+        <ArticleInfo link = { article.link } language={ article.language }/>
         {this.getContent()}
         <button
           onClick = { toggleOpen }
@@ -25,7 +24,7 @@ export default class Article extends React.PureComponent {
           { isOpen ? '' : 'Подробнее...' }
         </button>
         <TagList tags = {article.tags}/>
-      </div>
+      </section>
     );
   }
 
@@ -38,13 +37,13 @@ export default class Article extends React.PureComponent {
     // }
     return <CSSTransition timeout={ { enter: 300, exit: 0 } } classNames='article' in={isOpen} unmountOnExit>
       {
-        <section className={'Article-Content'}>
+        <div className={'Article-Content'}>
           <YouTubeFrame {...this.props.article}/>
           <p className={'Article-Content_Text'}>
             {content}
           </p>
           {/* <CommentList comments = { comments }/> */}
-        </section>
+        </div>
       }
     </CSSTransition>;
   }
