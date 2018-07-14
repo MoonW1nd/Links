@@ -1,11 +1,7 @@
-@import '../../UI-Kit/sizes';
 @import '../../UI-Kit/colors';
 
 .LanguageIcon {
-  // border: $lightSeporationColor 1px solid;
-  // border-radius: 10px;
   color: $cyan;
-  margin-right: 10px;
   font-size: 0.75em;
-  font-weight: bold;
+  font-weight: 400;
 }

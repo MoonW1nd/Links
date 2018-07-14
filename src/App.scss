@@ -18,6 +18,7 @@ body {
 
 #App {
   font-family: $mainFontFamily;
+  font-size: $fontSize_default;
   .App {
     display: flex;
     flex-direction: column;
