@@ -1,18 +1,23 @@
 Todo:
   Develop:
+    ✔ add GitHub pages @done(18-07-14 21:49)
+    ✔ add AutoPrefixer @done(18-05-02 21:38)
+    ✔ Add link with logo authtor of description @done(18-07-14 21:50)
+    ✔ Add Languige mark on Article Card @done(18-07-14 21:50)
+    ☐ Add markdown support in description
     ☐ create more size for TagList
     ☐ add set size TagList in props
     ☐ create UI-Kit for consistency sizes, colors and other values (Design Sistem)
-    ✔ add AutoPrefixer @done(18-05-02 21:38)
     ☐ add sort articles by date or by time adding
-    ☐ add GitHub pages
-    ☐ ! Upgrade outline on fucused element
     ☐ Add all size for svg in LogoButton component
-    ☐ Add Languige mark on Article Card
-    ☐ Add link with logo authtor of description
+    ☐ ! Upgrade outline on fucused element
+    ☐ add search Input
+
 
   Feature:
-    ☐ Add video player from Youtube
+    ✔ Add video player from Youtube @done(18-07-14 21:51)
+    ☐ Hithlight for code markdown
+    ☐ Add break by on paragraph
 
   Documentation:
     ☐ Add README

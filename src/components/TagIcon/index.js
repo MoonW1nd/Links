@@ -11,7 +11,34 @@ export default function TagImage(props) {
     className = {props.tagName ? `TagIcon ${sizeClass}` : 'TagName'}
     src = {img}
     alt = {props.tagName ? `tag-${props.tagName}` : 'tag'}
+    title = { getTitle(props.tagName) }
   />;
+}
+
+function getTitle(tagName) {
+  let title = null;
+  switch (tagName) {
+    case 'nodeJS':
+      title = 'Node.js';
+      break;
+
+    case 'UIUX':
+      title = 'UX/UI';
+      break;
+
+    case 'css':
+      title = 'CSS';
+      break;
+
+    case 'html':
+      title = 'HTML';
+      break;
+
+    default:
+      title = tagName[0].toUpperCase() + tagName.slice(1);
+      break;
+  }
+  return title;
 }
 
 TagImage.propTypes = {

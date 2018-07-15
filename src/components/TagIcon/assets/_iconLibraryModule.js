@@ -8,6 +8,8 @@ import html from './html.svg';
 import UIUX from './UIUX.svg';
 import design from './design.svg';
 import youTube from './youTube.svg';
+import typography from './text.svg';
+import graphQL from './graphql.svg';
 
 export default {
   nodeJS,
@@ -20,4 +22,6 @@ export default {
   UIUX,
   design,
   youTube,
+  typography,
+  graphQL,
 };

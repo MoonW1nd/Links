@@ -4,18 +4,16 @@
 .Link {
   &_size {
     &_s {
-      font-size: $fontSize_small;
-      font-weight: $fontWeight_normal;
+      font-size: 0.75em;
+      font-weight: 400;
     }
   }
 
   &_type {
     &_article {
-      // color: $gray;
-      margin-top: $margin_small;
-      margin-right: -65px;
       color: $linkColor;
       text-decoration: none;
+      white-space: nowrap;
     }
   }
 }
