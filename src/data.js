@@ -172,7 +172,7 @@ export const articles = [
   },
   {
     id: '20',
-    date: '2017-02-15T15:03:23.000Z',
+    date: '2017-07-10T15:03:23.000Z',
     title: 'Уровень развития CSS: пристальный взгляд на CSS архитектуры',
     language: 'ru',
     link: 'http://jem-space.ru/urovien-razvitiia-v-css-pristalnyi-vzghliad-na-css-arkhitiektury/',
