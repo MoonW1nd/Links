@@ -10,6 +10,7 @@ import design from './design.svg';
 import youTube from './youTube.svg';
 import typography from './text.svg';
 import graphQL from './graphql.svg';
+import git from './git.svg';
 
 export default {
   nodeJS,
@@ -24,4 +25,5 @@ export default {
   youTube,
   typography,
   graphQL,
+  git,
 };
