@@ -3,9 +3,9 @@ import { PropTypes } from 'prop-types';
 import './style.scss';
 
 export default function PublishDate({ date }) {
-  return <div className = 'PublishDate'>
+  return <time className = 'PublishDate'>
     {convertDate(date)}
-  </div>;
+  </time>;
 }
 
 function convertDate(inputDate) {

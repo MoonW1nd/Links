@@ -6,14 +6,34 @@ body {
   margin: 0;
   background-color: #f6f6f6;
   min-width: $App_minWidth; // size Galszy s5
+
+  ::selection {
+    background: $cyanLight;
+  }
+
+  ::-moz-selection {
+    background: $cyanLight;
+  }
 }
 
 #App {
   font-family: $mainFontFamily;
+  font-size: $fontSize_default;
+  margin-bottom: 20px;
+
   .App {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+  }
+
+  code {
+    padding: 16px;
+    display: block;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 3px;
   }
 }
