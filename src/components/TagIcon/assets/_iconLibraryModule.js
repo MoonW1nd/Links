@@ -11,6 +11,7 @@ import youTube from './youTube.svg';
 import typography from './text.svg';
 import graphQL from './graphql.svg';
 import git from './git.svg';
+import softSkills from './softSkills.svg';
 
 export default {
   nodeJS,
@@ -26,4 +27,5 @@ export default {
   typography,
   graphQL,
   git,
+  softSkills,
 };
