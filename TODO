@@ -4,7 +4,7 @@ Todo:
     ✔ add AutoPrefixer @done(18-05-02 21:38)
     ✔ Add link with logo authtor of description @done(18-07-14 21:50)
     ✔ Add Languige mark on Article Card @done(18-07-14 21:50)
-    ☐ Add markdown support in description
+    ✔ Add markdown support in description @done(18-09-02 21:08)
     ☐ create more size for TagList
     ☐ add set size TagList in props
     ☐ create UI-Kit for consistency sizes, colors and other values (Design Sistem)
