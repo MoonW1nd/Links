@@ -242,4 +242,22 @@ export const articles = [
     text: 'В статье рассказывается про новые единицы CSS, которые будут детально описаны в готовящемся CSS Value и Units Module Level 4.',
     tags: ['css'],
   },
+  {
+    id: '28',
+    date: '2018-08-22T15:03:23.000Z',
+    title: 'Введение в программирование шейдеров для верстальщиков',
+    language: 'ru',
+    link: 'https://habr.com/post/420847/',
+    text: 'Хорошая статья для того чтобы начать знакомство с шейдерами. В статье приведена реализация интересных эффектов созданных с помощью шейдеров, можно покопаться в коде и для более глубокого понимания статьи.',
+    tags: ['javaScript'],
+  },
+  {
+    id: '29',
+    date: '2018-07-10T15:03:23.000Z',
+    title: 'Building the Google Photos Web UI',
+    language: 'en',
+    link: 'https://medium.com/google-design/google-photos-45b714dfbed1',
+    text: 'Интересная статья о том как строился UI Google Photos.',
+    tags: ['javaScript', 'UIUX', 'design'],
+  },
 ];
