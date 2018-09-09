@@ -12,6 +12,7 @@ import typography from './text.svg';
 import graphQL from './graphql.svg';
 import git from './git.svg';
 import softSkills from './softSkills.svg';
+import webTheory from './web.svg';
 
 export default {
   nodeJS,
@@ -28,4 +29,5 @@ export default {
   graphQL,
   git,
   softSkills,
+  webTheory,
 };
