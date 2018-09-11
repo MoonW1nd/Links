@@ -296,4 +296,13 @@ export const articles = [
     text: 'JavaScript — это приключение, или 10 вещей, которые вы в конечном итоге узнаете о JavaScript-проектах.',
     tags: ['javaScript'],
   },
+  {
+    id: '34',
+    date: '2018-07-31T15:03:23.000Z',
+    title: 'How to use Media Queries in JavaScript with matchMedia',
+    language: 'eng',
+    link: 'https://www.sitepoint.com/javascript-media-queries/',
+    text: 'Небольшая заметка про использование функции window.matchMedia, которая позволяет работать с медиа выражениями в JS.',
+    tags: ['javaScript'],
+  },
 ];
