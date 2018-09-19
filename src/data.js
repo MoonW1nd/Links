@@ -341,4 +341,13 @@ export const articles = [
     text: 'Статья об использовании CSS Shapes. Фича позволяет задать форму обтекания текстом с помощью картинки.',
     tags: ['css'],
   },
+  {
+    id: '39',
+    date: '2018-09-06T15:03:23.000Z',
+    title: 'Полное понимание синхронного и асинхронного JavaScript с Async/Await',
+    language: 'ru',
+    link: 'https://medium.com/@stasonmars/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%B8-%D0%B0%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-javascript-%D1%81-async-await-ba5f47f4436',
+    text: 'В этой статье вы узнаете о том, что такое синхронное и асинхронное программирование в JavaScript и как применяя эти знания, работать с Async/Await.',
+    tags: ['javaScript'],
+  },
 ];
