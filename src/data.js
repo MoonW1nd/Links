@@ -350,4 +350,13 @@ export const articles = [
     text: 'В этой статье вы узнаете о том, что такое синхронное и асинхронное программирование в JavaScript и как применяя эти знания, работать с Async/Await.',
     tags: ['javaScript'],
   },
+  {
+    id: '40',
+    date: '2018-09-20T15:03:23.000Z',
+    title: 'Idle Until Urgent',
+    language: 'eng',
+    link: 'https://philipwalton.com/articles/idle-until-urgent/',
+    text: 'Филип Уолтон довёл характеристику быстродействия FID (First Input Delay, время от первого взаимодействия до ответа браузера) для своего сайта от 254 мс до 100 мс и меньше. Подробно о процессе обнаружения, отладке и подходе Idle Until Urgent.',
+    tags: ['javaScript'],
+  },
 ];
