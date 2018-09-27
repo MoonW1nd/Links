@@ -377,4 +377,22 @@ export const articles = [
     text: 'Хороший сайт с примерами анимаций для различных элементов интерфейса.',
     tags: ['UIUX', 'Design'],
   },
+  {
+    id: '43',
+    date: '2018-06-28T15:03:23.000Z',
+    title: 'Level up for UX: Design lessons from video games',
+    language: 'eng',
+    link: 'https://evilmartians.com/chronicles/level-up-for-ux-design-lessons-from-videogames',
+    text: 'В статье описываются приемы которые можно позаимствовать из игр для дизайна интерфейса сайтов.',
+    tags: ['UIUX', 'Design'],
+  },
+  {
+    id: '44',
+    date: '2018-03-28T15:03:23.000Z',
+    title: 'Optimizing React: Virtual DOM explained',
+    language: 'eng',
+    link: 'https://evilmartians.com/chronicles/optimizing-react-virtual-dom-explained',
+    text: 'Отличная статья объясняющая что такое VirtualDOM и как ускорить ваш сайт используя эти знания.',
+    tags: ['javaScript'],
+  },
 ];
