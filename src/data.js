@@ -375,7 +375,7 @@ export const articles = [
     language: 'eng',
     link: 'https://www.lottiefiles.com/',
     text: 'Хороший сайт с примерами анимаций для различных элементов интерфейса.',
-    tags: ['UIUX', 'Design'],
+    tags: ['site', 'UIUX', 'Design'],
   },
   {
     id: '43',
