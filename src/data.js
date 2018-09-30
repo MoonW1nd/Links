@@ -366,7 +366,7 @@ export const articles = [
     language: 'ru',
     link: 'http://mikeozornin.ru/blog/all/how-to-write-datetime-in-ui/',
     text: 'Как писать дату и время в интерфейсах: форматы, сокращения, запись диапазонов, длительности и относительных дат. Михаил Озорнин делится дизайнерскими гайдлайнами, которые пригодятся всем, кто разрабатывает интерфейсы.',
-    tags: ['UIUX', 'Design'],
+    tags: ['UIUX', 'design'],
   },
   {
     id: '42',
@@ -375,7 +375,7 @@ export const articles = [
     language: 'eng',
     link: 'https://www.lottiefiles.com/',
     text: 'Хороший сайт с примерами анимаций для различных элементов интерфейса.',
-    tags: ['site', 'UIUX', 'Design'],
+    tags: ['site', 'UIUX', 'design'],
   },
   {
     id: '43',
@@ -384,7 +384,7 @@ export const articles = [
     language: 'eng',
     link: 'https://evilmartians.com/chronicles/level-up-for-ux-design-lessons-from-videogames',
     text: 'В статье описываются приемы которые можно позаимствовать из игр для дизайна интерфейса сайтов.',
-    tags: ['UIUX', 'Design'],
+    tags: ['UIUX', 'design'],
   },
   {
     id: '44',
