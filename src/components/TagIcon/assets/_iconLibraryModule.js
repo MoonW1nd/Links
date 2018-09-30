@@ -13,6 +13,7 @@ import graphQL from './graphql.svg';
 import git from './git.svg';
 import softSkills from './softSkills.svg';
 import webTheory from './web.svg';
+import site from './site.svg';
 
 export default {
   nodeJS,
@@ -30,4 +31,5 @@ export default {
   git,
   softSkills,
   webTheory,
+  site,
 };

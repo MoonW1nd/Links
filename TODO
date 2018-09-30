@@ -11,16 +11,20 @@ Todo:
     ☐ add sort articles by date or by time adding
     ☐ Add all size for svg in LogoButton component
     ☐ ! Upgrade outline on fucused element
-    ☐ add search Input
     ☐ add descriptions for tags and icon preview
-
+    ☐ add tag and icon for CodeLibraries or Simple Site
+    ☐ Ввести понятие категории вроде: Видео, Статья, Сайт, Библиотека.
 
   Feature:
     ✔ Add video player from Youtube @done(18-07-14 21:51)
+    ☐ add search Input
     ☐ Hithlight for code markdown
     ☐ Add break by on paragraph
+    ☐ Добавить меню с категориями
+    ☐ добавить форму добавления нового контента на сайт
 
   Documentation:
-    ☐ Add README
-    ☐ Add CHANGELOG
+    ✔ Add README @done(18-09-29 23:18)
+    ☐ Add CHANGELOG (для технических изменеий)
     ☐ Add description for PR and add new content
+    ☐ Описать для себя правила добовлени статей: что в коммите должны бить названия.
