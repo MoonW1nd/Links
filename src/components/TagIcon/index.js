@@ -6,9 +6,8 @@ import './style.scss';
 export default function TagImage(props) {
   let img = iconLibrary[props.tagName];
   if (img === undefined) img = '';
-  const sizeClass = props.size ? `TagIcon_size_${props.size}` : 'TagIcon_size_medium';
   return <img
-    className = {props.tagName ? `TagIcon ${sizeClass}` : 'TagName'}
+    className = {`TagIcon TagIcon_${props.tagName}`}
     src = {img}
     alt = {props.tagName ? `tag-${props.tagName}` : 'tag'}
     title = { getTitle(props.tagName) }

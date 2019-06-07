@@ -4,10 +4,10 @@ import { PropTypes } from 'prop-types';
 import './style.scss';
 
 export default function TagList({ tags }) {
-  const tagList = tags.map((tag, i) => <li className='TagList-Element' key={i}><TagIcon tagName={ tag } size='small'/></li>);
-  return <ul className="TagList">
-    {tagList}
-  </ul>;
+  const tag = tags[0];
+  return <div className={`TagList TagList_${tag}`}>
+    <li className={'TagList-Element'}><TagIcon tagName={ tag } size='small'/></li>
+  </div>;
 }
 
 TagList.defaultProps = {
