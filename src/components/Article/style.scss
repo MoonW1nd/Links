@@ -20,7 +20,6 @@
 }
 
 .Article {
-  min-height: 100px;
   max-width: calc(70ch + 70px);
   min-width: 370px;
   width: 100%;
@@ -28,7 +27,7 @@
   background-color: $white;
   border-radius: 5px;
   box-sizing: border-box;
-  padding: $Card_padding;
+  padding: $Card_padding_vertical $Card_padding_horizontal;
   position: relative;
   display: flex;
   flex-direction: column;

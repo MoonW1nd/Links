@@ -4,7 +4,7 @@ import './style.scss';
 
 export default function LanguageIcon({ language }) {
   return <span className='LanguageIcon'>
-    {language.toUpperCase()}
+    {language.toLowerCase()}
   </span>;
 }
 
