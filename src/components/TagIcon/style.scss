@@ -1,10 +1,41 @@
 @import '../../UI-Kit/sizes';
 
 .TagIcon {
-  &_size {
-    &_small {
-      width: $TagIcon_size_small;
-      height: $TagIcon_size_small;
-    }
+  &_javaScript {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-20deg);
+  }
+  &_webTheory {
+    width: 130px;
+    height: 130px;
+  }
+  &_css {
+    width: 100px;
+    height: 100px;
+  }
+  &_design {
+    width: 100px;
+    height: 100px;
+  }
+  &_UIUX {
+    width: 100px;
+    height: 100px;
+  }
+  &_typography {
+    width: 100px;
+    height: 100px;
+  }
+  &_softSkills {
+    width: 100px;
+    height: 100px;
+  }
+  &_site {
+    width: 100px;
+    height: 100px;
+  }
+  &_git {
+    width: 100px;
+    height: 100px;
   }
 }

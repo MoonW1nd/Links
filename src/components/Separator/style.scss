@@ -1,9 +1,9 @@
 @import '../../UI-Kit/colors';
 
 .Separator {
-  width: 2px;
+  width: 1px;
   height: 15px;
-  background-color: darken($lightGray, $amount: 20%);
+  background-color: darken($lightGray, $amount: 50%);
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 7px;
 }

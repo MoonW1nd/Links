@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { CSSTransition } from 'react-transition-group';
 import './style.scss';
 import TagList from '../TagList/index';
-import PublishDate from '../PublishDate/index';
 import YouTubeFrame from '../YouTubeFrame';
 import ArticleInfo from '../ArticleInfo';
 import { markdown } from 'markdown';
@@ -12,19 +11,11 @@ import DOMPurify from 'dompurify';
 
 export default class Article extends React.PureComponent {
   render() {
-    const { article, isOpen, toggleOpen } = this.props;
+    const { article } = this.props;
     return (
       <section className='Article'>
         <h3 className='Article-Title'>{ article.title }</h3>
-        <PublishDate date = { article.date }/>
         <ArticleInfo link = { article.link } language={ article.language }/>
-        {this.getContent()}
-        <button
-          onClick = { toggleOpen }
-          className = { `Article-Button ${isOpen ? 'Article-Button_open' : ''}`}
-        >
-          { isOpen ? '' : 'Подробнее...' }
-        </button>
         <TagList tags = {article.tags}/>
       </section>
     );

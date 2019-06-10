@@ -14,6 +14,8 @@ Todo:
     ☐ add descriptions for tags and icon preview
     ☐ add tag and icon for CodeLibraries or Simple Site
     ☐ Ввести понятие категории вроде: Видео, Статья, Сайт, Библиотека.
+    ☐ Реализовать функцию Instant View (открытие и чтение статью прямо на сайте, с вырезанием всего ненужного из сайта)
+    ☐ Выпилить markdown и возможно DOMpurify
 
   Feature:
     ✔ Add video player from Youtube @done(18-07-14 21:51)

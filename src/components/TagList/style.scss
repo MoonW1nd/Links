@@ -2,13 +2,60 @@
 
 .TagList {
   position: absolute;
-  display: flex;
-  list-style-type: none;
-  bottom: $Card_padding;
-  right: $Card_padding;
-  height: 20px;
 
   &-Element {
     margin-left: $margin_small;
+  }
+
+  &_javaScript {
+    top: -32px;
+    right: -7px;
+    height: 100%;
+  }
+  &_webTheory {
+    top: -20px;
+    right: -30px;
+    height: 100%;
+  }
+  &_css {
+    top: -5px;
+    right: -20px;
+    transform: rotate(-20deg);
+    height: 100%;
+  }
+  &_design {
+    top: -5px;
+    right: -5px;
+    transform: rotate(-20deg);
+    height: 100%;
+  }
+  &_UIUX {
+    top: -3px;
+    right: -14px;
+    transform: rotate(-20deg);
+    height: 100%;
+  }
+  &_typography {
+    top: -9px;
+    right: -21px;
+    transform: rotate(-20deg);
+    height: 100%;
+  }
+  &_softSkills {
+    top: -9px;
+    right: -21px;
+    transform: rotate(-20deg);
+    height: 100%;
+  }
+  &_site {
+    top: -9px;
+    right: -21px;
+    transform: rotate(-20deg);
+    height: 100%;
+  }
+  &_git {
+    top: -9px;
+    right: -21px;
+    height: 100%;
   }
 }
